@@ -1,6 +1,8 @@
 
-* {
+.table {
   box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .header {
@@ -8,32 +10,24 @@
   padding: 15px;
 }
 
-.one {
-  width: 25%;
-  float: left;
-  padding: 15px;
+.box {
+  flex-grow: 0.25;
   border: 1px solid red;
+    
 }
 
-.two {
-  width: 25%;
-  float: left;
-  padding: 15px;
-  border: 1px solid red;
-}
-
-.three {
-    width: 25%;
-    float: left;
-    padding: 15px;
-    border: 1px solid red;
+@media (max-width: 720px) {
+  .box {
+    width: calc(50% - 2px)
   }
-
-.four {
-  width: 25%;
-  float: left;
-  padding: 15px;
-  border: 1px solid red;
 }
 
+@media (max-width: 360px) {
+  .box {
+    width: calc(100% - 2px)
+  }
+}
 
+h1 {
+
+}
