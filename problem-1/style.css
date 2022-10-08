@@ -1,0 +1,39 @@
+
+* {
+  box-sizing: border-box;
+}
+
+.header {
+  border: 1px solid red;
+  padding: 15px;
+}
+
+.one {
+  width: 25%;
+  float: left;
+  padding: 15px;
+  border: 1px solid red;
+}
+
+.two {
+  width: 25%;
+  float: left;
+  padding: 15px;
+  border: 1px solid red;
+}
+
+.three {
+    width: 25%;
+    float: left;
+    padding: 15px;
+    border: 1px solid red;
+  }
+
+.four {
+  width: 25%;
+  float: left;
+  padding: 15px;
+  border: 1px solid red;
+}
+
+
