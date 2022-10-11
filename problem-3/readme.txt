@@ -1,0 +1,1 @@
+My extension adds images and quotes of Linus Sebastian, of LinusTechTips fame
