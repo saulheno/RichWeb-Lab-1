@@ -4,37 +4,47 @@
     box-sizing: border-box;
 }
 body {
-    background: rgb(224, 191, 41);
+    background: rgb(201, 201, 84);
 }
 
-.wrapper {
-    margin: 50px;
-    display: grid;
-    gap: 25px;
-    grid-template-columns: repeat(auto-fill, 265px);
-}
-
-.wrapper li {
-    height: 250px;
-    list-style: none;
-    border-radius: 5px;
-    padding: 15px 20px 20px;
-}
-
-.add {
+.note {
     background: white;
-}
-
-.add, .addButton {
     display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: space-between;
 }
 
-.addButton .button {
-    padding: 7px 16px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
+.note-form {
+    max-height: 165px;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.note-area {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 265px);
+    gap: 25px;
+}
+
+.exit-button {
+    border: none;
+    width: 15px;
+    
+}
+
+.color-button {
+    border: none;
+    width: 45px;
+    
+}
+
+.add-area {
+    display: grid;
+    gap: 25px;
+    margin-bottom: 10px;
+}
+.add-button {
+    border: none;
+    width: 40px;
+    height: 40px;
 }
