@@ -26,3 +26,9 @@ const h3 = document.getElementsByTagName("h3");
 for (let i = 0; i < p.length; i++){
     h3[i].innerText = "Coltons Fired";
 }
+
+document.getElementsByTagName('*').style.color = 'red'
+
+document.querySelector('*').getElementsByClassName.color='red'
+// const txt = getComputedStyle(element)
+// const color = txt.color
