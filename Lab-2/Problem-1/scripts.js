@@ -106,16 +106,19 @@ add.addEventListener("click", () => {
         name.value = ''
         number.value = ''
         email.value = ''
+        return
     } else if(!checkNumber(number.value)) {
         alert(number.value+" is not a valid IRE phone number!")
         name.value = ''
         number.value = ''
         email.value = ''
+        return
     } else if(!checkEmail(email.value) || email.value.length > 40) {
         alert(email.value+" is not a valid email or is above 40 characters!")
         name.value = ''
         number.value = ''
         email.value = ''
+        return
     }
     counter = counter + 1;
     let contact = `
