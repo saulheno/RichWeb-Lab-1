@@ -1,9 +1,9 @@
 var wordFreq = []; 
 fetch('https://jsonplaceholder.typicode.com/posts')
   .then(response => response.json())
-  // .then(json => console.log(json.filter(titleLength)))
-  .then ( json => json.filter(bodyCount))
-  .then (_ => showResult())
+  // .then(json => console.log(json.filter(titleLength))) //for title part
+  .then ( json => json.filter(bodyCount)) //for frequency part
+  .then (_ => showResult()) //for frequency part
 
 function titleLength(json) {
   const titles = json.title
