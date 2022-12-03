@@ -1,0 +1,26 @@
+* {
+    margin: auto;
+    padding: 0;
+    box-sizing: border-box;
+  
+}
+body {
+    background: rgb(201, 201, 84);
+    margin: 0;
+}
+.start {
+    border: none;
+    font-size: large;
+    width: 70px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.TimerArea{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background: white;
+    border: 15px solid white;
+}
