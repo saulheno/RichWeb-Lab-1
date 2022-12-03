@@ -11,14 +11,14 @@ function timer() {
     console.log("In func")
     count = 1
     curr = 0;
-    while( count = 1 && curr != setTime ) {
-        console.log("In while")
-        setTimeout(function() {
-            console.log("In func")
-            curr = curr + 1;
-            time = setTime - curr;
-            console.log(time);
-        }, 1000)
+    var interval = setInterval(function() {
+        console.log("In func")
+        curr = curr + 1;
+        time = setTime - curr;
+        console.log(time);
+        if( count == 0 || curr == setTime){
+            clearInterval(interval)
+        }
+    }, 1000)
         
     }
-}
