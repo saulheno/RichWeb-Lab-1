@@ -2,13 +2,16 @@ const { Observable, fromEvent, range, map } = rxjs;
 
 const startButton = document.querySelector(".start");
 
-const setTime = 10;
+const setTime = 0;
 
 const timing = fromEvent(startButton, 'click');
 timing.subscribe(timer);
 
 function timer() {
-    console.log("In func")
+    hour = document.getElementById("H").value
+    minute = document.getElementById("M").value
+    secs = document.getElementById("S").value
+    console.log(hour, minute, secs)
     count = 1
     curr = 0;
     var interval = setInterval(function() {
