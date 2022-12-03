@@ -7,17 +7,19 @@
 body {
     background: rgb(201, 201, 84);
     margin: 0;
+    font-size: xx-large;
 }
 .start {
     border: none;
-    font-size: large;
-    width: 70px;
+    font-size: xx-large;
+    width: 85px;
     justify-content: center;
     align-items: center;
     display: flex;
 }
 
 .TimerArea{
+    font-size: xx-large;
     justify-content: center;
     align-items: center;
     display: flex;
