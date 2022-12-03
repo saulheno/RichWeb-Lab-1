@@ -1,7 +1,7 @@
 const { Observable, fromEvent, range, map } = rxjs;
 
 const startButton = document.querySelector(".start");
-
+timerArea = document.querySelector(".TimerArea");
 var setTime = 0;
 
 const timing = fromEvent(startButton, 'click');
@@ -23,6 +23,7 @@ function timer() {
         curr = curr + 1;
         time = setTime - curr;
         console.log(time);
+        document.getElementById('timeDisplay').innerHTML = time;
         if( count == 0 || curr == setTime){
             clearInterval(interval)
         }
