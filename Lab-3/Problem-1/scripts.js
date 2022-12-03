@@ -1,8 +1,14 @@
+const { Observable, fromEvent } = rxjs;
+
 const addbutton = document.querySelector(".add-button"),
 delbutton = document.querySelector(".exit-button"),
 notearea = document.querySelector(".note-area");
 
-addbutton.addEventListener("click", () => {
+const actionObservable = fromEvent(addbutton, 'click');
+actionObservable.subscribe(addNote)
+
+
+function addNote() {
     let notetemplate = `<div class="note">
                             <div class="buttons">
                                 <button class="exit-button" onclick="deleteNote(this)"> X </button>
@@ -19,7 +25,7 @@ addbutton.addEventListener("click", () => {
                             </form>
                         </div>`
     notearea.insertAdjacentHTML("beforeend", notetemplate)
-})
+}
 
 function deleteNote(elem) {
     elem.parentElement.parentElement.remove();

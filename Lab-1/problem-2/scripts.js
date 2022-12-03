@@ -1,3 +1,5 @@
+const { fromEvent, Subject } = rxjs;
+
 const addbutton = document.querySelector(".add-button"),
 delbutton = document.querySelector(".exit-button"),
 notearea = document.querySelector(".note-area");
